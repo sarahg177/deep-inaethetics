@@ -1,0 +1,382 @@
+/*----------------------------------------Colors*/
+
+body {
+    background-color: #d8d8d8;
+}
+
+.bg-color-home {
+    background-color: #9e95d8;
+}
+
+.bg-color-treatments {
+    background-color: #d8d8d8;
+}
+
+footer {
+    background-color: #9e95d8;
+}
+
+/*----------------------------------------Margins and Text*/
+
+header {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+}
+
+
+/*----------------------------------------Header*/
+
+#content {
+    width: 100%;
+    height: 144px;
+    border: 1px solid #9e95d8;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+}
+
+.content-2 {
+    margin-top: 0;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.boxlogo {
+    height: 140px;
+    width: 50%;
+}
+
+.logoimg {
+    height: 144px;
+    width: 188px;
+}
+
+.menuitem {
+    width: 48%;
+    height: 70px;
+    text-align: center;
+    padding: 0;
+    border: 1px solid #9e95d8;
+}
+
+.menuitem a {
+    text-decoration: none;
+}
+
+.menuitem span {
+    display: block;
+    width: 100%;
+    padding-top: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.menuitem-1 a span {
+    width: 100%;
+    color: #d8d8d8;
+    height: 70px;
+    margin-top: 20px;
+}
+
+.menuitem-2 a span {
+    width: 100%;
+    color: #9e95d8;
+    height: 70px;
+    margin-top: 20px;
+}
+
+/*----------------------------------------Main Section*/
+
+section {
+    min-height: 100%;
+}
+
+.welcome {
+    color: #9e95d8;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.breif-description {
+    color: #9e95d8;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.welcome-img {
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    border-radius: 50%;
+    border: #9e95d8 solid 1px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*----------------------------------------Hover.css*/
+
+.menuitem:hover {
+    background: rgba(0, 0, 0, 0.2);
+    height: 70px;
+}
+
+/*----------------------------------------Footer*/
+
+footer {
+    min-height: 90px;
+}
+
+.footer-content {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+footer h4 {
+    font-size: 10px;
+    color: #d8d8d8;
+    text-transform: uppercase;
+}
+
+footer p {
+    font-size: 10px;
+    color: #d8d8d8;
+}
+
+.box-about {
+    width: 33.33%;
+    text-align: center;
+}
+
+.box-contact {
+    width: 33.33%;
+    text-align: center;
+}
+
+.box-social {
+    width: 33.33%;
+    text-align: center;
+}
+
+.social-links {
+    padding-left: 0px;
+}
+
+.social-links li {
+    text-decoration: none;
+    list-style: none;
+    display: inline-block;
+}
+
+.social-links li a i {
+    width: 15px;
+    height: 15px;
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
+    color: #9e95d8;
+    background: #d8d8d8;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+.social-links li a i:hover {
+    background: rgba(0, 0, 0, 0.2);
+    height: 100%;
+}
+
+
+/*----------------------------------------Media Queries*/
+
+/*-----Tablet ---*/
+
+/*----------------------------------------Tablet Header*/
+
+@media (min-width: 768px) {
+
+    #content {
+        height: 250px;
+    }
+
+    .logoimg {
+        height: 250px;
+        width: 385px;
+    }
+
+    .menuitem {
+        height: 123px;
+    }
+
+    .menuitem span {
+        font-size: 25px;
+    }
+
+    .menuitem-1 a span {
+        height: 137px;
+        margin-top: 40px;
+    }
+
+    .menuitem-2 a span {
+        height: 137px;
+        margin-top: 40px;
+    }
+
+    .menuitem:hover {
+        background: rgba(0, 0, 0, 0.2);
+        height: 123px;
+    }
+
+    /*----------------------------------------Tablet Main Section*/
+    .welcome {
+        font-size: 25px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .breif-description {
+        font-size: 20px;
+        margin-top: 50px;
+        margin-bottom: 150px;
+    }
+
+    .welcome-img {
+        width: 150px;
+        height: 150px;
+        padding: 5px;
+    }
+
+    /*----------------------------------------Tablet Footer*/
+    footer h4 {
+        font-size: 15px;
+    }
+
+    footer p {
+        font-size: 15px;
+    }
+
+    .social-links li a i {
+        width: 35px;
+        height: 35px;
+        padding: 6px;
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+
+}
+
+/*-----Desktop-----*/
+
+/*----------------------------------------Desktop Header*/
+
+@media (min-width: 1024px) {
+    .logoimg {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #content {
+        height: 400px;
+        width: 100%;
+        margin-top: 5px;
+        border: none;
+    }
+
+    .content-2 {
+        width: 100%;
+        height: 144px;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .menuitem {
+        height: 100px;
+        width: 200px;
+        margin-top: 250px;
+    }
+
+    .menuitem-1 a span {
+        height: 137px;
+        margin-top: 30px;
+    }
+
+    .menuitem-2 a span {
+        height: 137px;
+        margin-top: 30px;
+    }
+
+    .menuitem:hover {
+        background: rgba(0, 0, 0, 0.2);
+        height: 100px;
+    }
+
+    .boxlogo {
+        width: 100%;
+    }
+
+    .about {
+        background-color: #9e95d8;
+    }
+
+    .contact {
+        background-color: #d8d8d8;
+    }
+
+    .about a span {
+        width: 100%;
+        color: #d8d8d8;
+        height: 100px;
+        margin-top: 30px;
+    }
+
+    .contact a span {
+        width: 100%;
+        color: #9e95d8;
+        height: 100px;
+        margin-top: 30px;
+    }
+    
+      /*----------------------------------------Desktop Main Section*/
+    .welcome {
+        font-size: 30px;
+    }
+
+    .breif-description {
+        font-size: 25px;
+    }
+
+    .welcome-img {
+        width: 250px;
+        height: 250px;
+        padding: 5px;
+    }
+
+    /*----------------------------------------Desktop Footer*/
+    footer h4 {
+        font-size: 20px;
+    }
+
+    footer p {
+        font-size: 20px;
+        padding-left: 1px;
+    }
+}
