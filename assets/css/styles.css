@@ -223,6 +223,56 @@ section {
     margin-right: auto;
 }
 
+p {
+    color: #9e95d8;
+    text-align: center;
+}
+
+.enquiry {
+    text-transform: uppercase;
+    color: #9e95d8;
+    text-align: center;
+}
+
+.contact-form {
+    text-align: center;
+    padding-top: 10px;
+    margin: 0 auto;
+    max-width: 70%;
+    margin-bottom: 5px;
+}
+
+
+
+button[type="submit"] {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    background-color: #9e95d8;
+    color: #d8d8d8;
+}
+
+
+input,
+textarea {
+    width: 70%;
+    background-color: #d9d9d9;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 3px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+}
+
+placeholer {
+    color: #9e95d8;
+}
+
+iframe {
+    max-width: 100%;
+}
+
 /*----------------------------------------Treatments*/
 
 .treatment-logo {
@@ -476,6 +526,18 @@ footer p {
         text-align: center;
     }
 
+    p {
+        font-size: 22px;
+    }
+
+    iframe {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5px;
+        margin-bottom: 30px;
+    }
+
     /*----------------------------------------Tablet Footer*/
     footer h4 {
         font-size: 15px;
@@ -614,9 +676,8 @@ footer p {
     .insurance-logo {
         width: 80px;
     }
-    
+
     /*----------------------------------------Desktop Treatments*/
-    
     .treatment-logo {
         margin-bottom: 30px;
     }
