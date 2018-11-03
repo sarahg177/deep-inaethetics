@@ -47,7 +47,8 @@ https://xd.adobe.com/spec/1f7e4a9e-39da-4304-7233-de223c9a4c9e-694f/
 
 • HTML5<br>
 • CSS<br>
-• CSS Flexbox
+• CSS Flexbox<br>
+• Fontawesome
 
 
 ## Testing
@@ -66,7 +67,8 @@ I have used cloud 9 to work on the coding of the website: https://ide.c9.io/sgri
 ## Credits
 
 ### Meida
-Photographs used throughout the project are taken from Adobe Stock and personal photographs taken by myself.
+Photographs used throughout the project are taken from Adobe Stock and personal photographs taken by myself. 
+I have included Fontawesome for styling the social links.
     
 ### Acknowledgements
     
