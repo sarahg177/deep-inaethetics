@@ -1,7 +1,7 @@
 /*----------------------------------------Colors*/
 
 body {
-    background-color: #d8d8d8;
+    background-color: #fafafa;
 }
 
 .bg-color-home {
@@ -9,7 +9,7 @@ body {
 }
 
 .bg-color-treatments {
-    background-color: #d8d8d8;
+    background-color: #fafafa;
 }
 
 footer {
@@ -80,7 +80,7 @@ body {
 
 .menuitem-1 a span {
     width: 100%;
-    color: #d8d8d8;
+    color: #fafafa;
     height: 70px;
     margin-top: 20px;
 }
@@ -98,8 +98,34 @@ section {
     min-height: 100%;
 }
 
+.index {
+    height: 60vh;
+
+    background: url("../images/Tender_female_with_beautiful_evening_make-up_over_white.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+
+    position: relative;
+    justify-content: center;
+}
+
+.opaque-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 60%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+
 .welcome {
-    color: #9e95d8;
+    color: #4e4343;
     text-transform: uppercase;
     text-align: center;
     margin-top: 30px;
@@ -111,6 +137,7 @@ section {
     text-align: center;
     margin-top: 30px;
     margin-bottom: 30px;
+    margin-right: 10px;
 }
 
 .welcome-img {
@@ -124,14 +151,39 @@ section {
     margin-right: auto;
 }
 
+.welcome-heading {
+    color: #9e95d8;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px
+}
+
+.about-us {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.alistair {
+    width: 100%;
+}
+
+.alistair-img {
+    width: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+
 .brief-description-2 {
     color: #9e95d8;
     margin: 30px 15px 30px 15px;
+    text-align: left;
 }
 
-.about-section {
-    margin-bottom: 10px;
-}
 
 .content-3 {
     width: 100%;
@@ -147,8 +199,8 @@ section {
 }
 
 .wrinkle-areas {
-    width: 32%;
-    text-align: center;
+    width: 25%;
+    text-align: left;
 }
 
 .treatments {
@@ -157,7 +209,7 @@ section {
 }
 
 .wrinkle {
-    text-align: center;
+    text-align: left;
 }
 
 .dermal {
@@ -177,12 +229,16 @@ section {
 .area {
     margin-left: 2px;
     margin-right: 0;
-    width: 23%;
+    width: 25%;
 }
 
 .prices {
     margin-left: -7px;
-    width: 18%;
+    width: 25%;
+}
+
+.anti {
+    margin-top: 28px;
 }
 
 .treatments-img {
@@ -193,18 +249,6 @@ section {
     border: #9e95d8 solid 1px;
 }
 
-.sub-section {
-    color: #9e95d8;
-}
-
-.sub-section a {
-    color: #9e95d8;
-    text-decoration: none;
-}
-
-.sub-section a:hover {
-    color: darkviolet;
-}
 
 .insurance {
     color: #9e95d8;
@@ -228,6 +272,10 @@ p {
     text-align: center;
 }
 
+.contact-page {
+    display: block;
+}
+
 .enquiry {
     text-transform: uppercase;
     color: #9e95d8;
@@ -235,34 +283,40 @@ p {
 }
 
 .contact-form {
+    width: 100%;
     text-align: center;
     padding-top: 10px;
     margin: 0 auto;
-    max-width: 70%;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
 }
 
+.address {
+    width: 100%;
+    margin-top: 65px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 
 button[type="submit"] {
     margin-top: 15px;
     margin-bottom: 20px;
     background-color: #9e95d8;
-    color: #d8d8d8;
+    color: #fafafa;
 }
 
 
 input,
 textarea {
     width: 70%;
-    background-color: #d9d9d9;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 3px;
+    background-color: transparent;
     border-width: 2px;
     border-style: inset;
     border-color: initial;
     border-image: initial;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #9e95d8;
 }
 
 placeholer {
@@ -274,6 +328,31 @@ iframe {
 }
 
 /*----------------------------------------Treatments*/
+
+.treatment-image {
+    height: 46vh;
+
+    background: url("../images/treatment-image.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+
+    position: relative;
+    justify-content: center;
+}
+
+.opaque-overlay-treat {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+}
 
 .treatment-logo {
     display: block;
@@ -309,7 +388,7 @@ h3 {
 
 .button {
     background-color: #9e95d8;
-    color: #d8d8d8;
+    color: #fafafa;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -323,15 +402,16 @@ a {
     text-decoration: none;
 }
 
-.button:hover {
-    background-color: darkviolet;
-}
 
 /*----------------------------------------Hover.css*/
 
 .menuitem:hover {
     background: darkviolet;
     height: 70px;
+}
+
+.button:hover {
+    background-color: darkviolet;
 }
 
 /*----------------------------------------Footer*/
@@ -351,27 +431,27 @@ footer {
 
 footer h4 {
     font-size: 10px;
-    color: #d8d8d8;
+    color: #fafafa;
     text-transform: uppercase;
 }
 
 footer p {
     font-size: 10px;
-    color: #d8d8d8;
+    color: #fafafa;
 }
 
 .box-about {
-    width: 33.33%;
+    width: 25%;
     text-align: center;
 }
 
 .box-contact {
-    width: 33.33%;
+    width: 25%;
     text-align: center;
 }
 
 .box-social {
-    width: 33.33%;
+    width: 25%;
     text-align: center;
 }
 
@@ -394,7 +474,7 @@ footer p {
     line-height: 15px;
     text-align: center;
     color: #9e95d8;
-    background: #d8d8d8;
+    background: #fafafa;
     transition: all 0.35s ease-in-out;
     -moz-transition: all 0.35s ease-in-out;
     -webkit-transition: all 0.35s ease-in-out;
@@ -404,6 +484,23 @@ footer p {
 .social-links li a i:hover {
     background: darkviolet;
     height: 100%;
+}
+
+.footer-insurance {
+    width: 25%;
+    color: #fafafa;
+    font-size: 13px;
+    text-align: center;
+    padding-bottom: 10px;
+    margin-bottom: 2px;
+}
+
+.footer-insurance-logo {
+    width: 25px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -417,6 +514,7 @@ footer p {
 
     #content {
         height: 250px;
+        z-index: 3;
     }
 
     .logoimg {
@@ -467,6 +565,14 @@ footer p {
         padding: 5px;
     }
 
+    .introduction {
+        width: 70%;
+    }
+
+    .alistair {
+        width: 30%;
+    }
+
     .brief-description-2 {
         font-size: 20px;
         margin-top: 50px;
@@ -503,7 +609,31 @@ footer p {
         width: 70px;
     }
 
+    .alistair-img {
+        width: 230px;
+        margin-top: 85px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .contact-page {
+        display: flex;
+    }
+    .contact-form {
+        width: 50%;
+    }
+
+    .address {
+        width: 50%;
+        margin-top: 55px;
+    }
+
     /*----------------------------------------Tablet Treatments*/
+    .treatment-image {
+        height: 56vh;
+    }
+
     .treatment-logo {
         margin-bottom: 30px;
     }
@@ -555,6 +685,9 @@ footer p {
         line-height: 35px;
     }
 
+    .footer-insurance-logo {
+        width: 40px;
+    }
 
 }
 
@@ -615,12 +748,12 @@ footer p {
     }
 
     .contact {
-        background-color: #d8d8d8;
+        background-color: #fafafa;
     }
 
     .about a span {
         width: 100%;
-        color: #d8d8d8;
+        color: #fafafa;
         height: 100px;
         margin-top: 30px;
     }
@@ -633,6 +766,14 @@ footer p {
     }
 
     /*----------------------------------------Desktop Main Section*/
+    .index {
+        height: 75vh;
+    }
+
+    .opaque-overlay {
+        height: 75%;
+    }
+
     .welcome {
         font-size: 50px;
     }
@@ -678,6 +819,10 @@ footer p {
     }
 
     /*----------------------------------------Desktop Treatments*/
+    .treatment-image {
+        height: 60vh;
+    }
+
     .treatment-logo {
         margin-bottom: 30px;
     }
@@ -708,5 +853,9 @@ footer p {
     footer p {
         font-size: 20px;
         padding-left: 1px;
+    }
+
+    .footer-insurance-logo {
+        width: 55px;
     }
 }
