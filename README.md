@@ -58,6 +58,7 @@ I have tested the functionality of my code on<br>
 • Safari<br>
 • Mobile browsers
 
+I validated my HTML and CSS code using https://validator.w3.org/ and correct errors such as image alt tags.
 
 ## Deployment
 
