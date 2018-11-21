@@ -4,13 +4,6 @@ body {
     background-color: #fafafa;
 }
 
-.bg-color-home {
-    background-color: #9e95d8;
-}
-
-.bg-color-treatments {
-    background-color: #fafafa;
-}
 
 footer {
     background-color: #9e95d8;
@@ -32,17 +25,33 @@ body {
 #content {
     width: 100%;
     height: 144px;
-    border: 1px solid #9e95d8;
     display: flex;
     flex-flow: column wrap;
     justify-content: flex-start;
 }
 
+#content .myLinks {
+    display: none;
+}
+
+.myLinks a {
+    color: #fafa;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+.navDefault {
+    width: 150px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    text-align: right;
+}
+
 .content-2 {
-    margin-top: 0;
-    width: 50%;
-    display: flex;
-    flex-wrap: wrap;
+    visibility: hidden;
 }
 
 .boxlogo {
@@ -51,46 +60,72 @@ body {
 }
 
 .logoimg {
-    height: 144px;
-    width: 188px;
+    height: 114px;
+    width: 158px;
 }
 
-.menuitem {
-    width: 48%;
-    height: 70px;
-    text-align: center;
+.burger i {
+    width: 25px;
+    height: 3px;
+    color: #9d95e8;
+    margin: 3px 0;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.burger {
+    margin-left: auto;
+    padding-right: 15px;
+    margin-top: 15px;
+}
+
+.burger i:hover {
+    color: darkviolet;
+}
+
+.dropdownMenu {
+    list-style: none;
+    margin: 0;
     padding: 0;
-    border: 1px solid #9e95d8;
-}
-
-.menuitem a {
-    text-decoration: none;
-}
-
-.menuitem span {
-    display: block;
-    width: 100%;
-    padding-top: 5px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 150px;
+    top: 32px;
     text-align: center;
+    box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.2);
+    transform: translateY(-175%);
+    transition: transform 0.5s ease-in-out;
+    z-index: -1;
+}
+
+.dropdownLink {
+    text-decoration: none;
     text-transform: uppercase;
-    font-size: 11px;
-    font-weight: 300;
-    letter-spacing: 1px;
+    display: block;
+    background-color: #fafafa;
+    color: #9d95e8;
+    padding: 10px 5px;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
 }
 
-.menuitem-1 a span {
-    width: 100%;
+.dropdownLink:hover {
     color: #fafafa;
-    height: 70px;
-    margin-top: 20px;
+    background-color: #9d95e8;
 }
 
-.menuitem-2 a span {
-    width: 100%;
-    color: #9e95d8;
-    height: 70px;
-    margin-top: 20px;
+.dropdown {
+    position: relative;
 }
+
+/*.dropdown:hover .burger {
+    background-color: darkviolet;
+}*/
+
+.dropdown:hover .dropdownMenu {
+    transform: translateY(0);
+}
+
 
 /*----------------------------------------Main Section*/
 
@@ -107,7 +142,6 @@ section {
     -o-background-size: cover;
     background-size: cover;
 
-    display: flex;
     align-items: center;
 
     position: relative;
@@ -118,18 +152,30 @@ section {
     position: absolute;
     top: 0;
     left: 0;
-    height: 60%;
+    height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: -3;
 }
 
 
 .welcome {
-    color: #4e4343;
+    color: #9e95d8;
+    font-size: 26px;
     text-transform: uppercase;
     text-align: center;
     margin-top: 30px;
     margin-bottom: 30px;
+    z-index: 3;
+}
+
+.welcome-treat {
+    color: #9d95e8;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    z-index: 3;
 }
 
 .brief-description {
@@ -204,7 +250,9 @@ section {
 
 .treatments {
     color: #9e95d8;
+    font-size: 20px;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .wrinkle {
@@ -226,18 +274,31 @@ section {
 }
 
 .area {
-    margin-left: 2px;
     margin-right: 0;
-    width: 25%;
+    width: 100%;
 }
 
 .prices {
-    margin-left: -7px;
-    width: 25%;
+    font-size: 14px;
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
 }
 
 .anti {
     margin-top: 28px;
+}
+
+.anti-prices {
+    color: #9e95d8;
+    font-size: 14px;
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.wrinkle-price {
+    width: 33%;
 }
 
 .treatments-img {
@@ -350,7 +411,7 @@ iframe {
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 .treatment-logo {
@@ -358,6 +419,11 @@ iframe {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
+}
+
+.dermal-heading {
+    text-align: center;
+    font-size: 16px;
 }
 
 h3 {
@@ -516,38 +582,25 @@ footer p {
         z-index: 3;
     }
 
+    .burger i {
+        margin: 10px 15px;
+        font-size: 40px;
+    }
+
+    .dropdownMenu {
+        top: 55px;
+    }
+
     .logoimg {
-        height: 250px;
-        width: 385px;
+        height: 220px;
+        width: 355px;
         align-content: center;
     }
 
-    .menuitem {
-        height: 123px;
-    }
-
-    .menuitem span {
-        font-size: 25px;
-    }
-
-    .menuitem-1 a span {
-        height: 137px;
-        margin-top: 40px;
-    }
-
-    .menuitem-2 a span {
-        height: 137px;
-        margin-top: 40px;
-    }
-
-    .menuitem:hover {
-        background: rgba(0, 0, 0, 0.2);
-        height: 123px;
-    }
 
     /*----------------------------------------Tablet Main Section*/
     .welcome {
-        font-size: 30px;
+        font-size: 45px;
         margin-top: 50px;
         margin-bottom: 50px;
     }
@@ -586,13 +639,29 @@ footer p {
         font-size: 22px;
     }
 
+    .area {
+        margin-right: 0;
+        width: 50%;
+    }
+
+    .dermal-heading {
+        font-size: 20px;
+    }
+
     .prices {
-        font-size: 22px;
-        margin-left: -15px;
+        font-size: 20px;
+    }
+
+    .anti-prices {
+        font-size: 20px;
     }
 
     .wrinkle-areas {
         font-size: 22px;
+    }
+
+    .treatments {
+        font-size: 34px;
     }
 
     .treatments-img {
@@ -609,8 +678,8 @@ footer p {
     }
 
     .alistair-img {
-        width: 230px;
-        margin-top: 85px;
+        width: 300px;
+        margin-top: 55px;
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -646,12 +715,11 @@ footer p {
     }
 
     .list-treatment-description {
-        font-size: 20px;
-        margin-left: 160px;
+        font-size: 16px;
     }
 
     .treatment-description {
-        font-size: 20px;
+        font-size: 16px;
         text-align: center;
     }
 
@@ -695,6 +763,14 @@ footer p {
 /*----------------------------------------Desktop Header*/
 
 @media (min-width: 1024px) {
+
+    .bg-color-home {
+        background-color: #9e95d8;
+    }
+
+    .bg-color-treatments {
+        background-color: #fafafa;
+    }
     .logoimg {
         display: block;
         margin-left: auto;
@@ -704,42 +780,77 @@ footer p {
     #content {
         height: 400px;
         width: 100%;
-        margin-top: 5px;
+        margin-top: 0;
         border: none;
     }
 
     .content-2 {
-        width: 100%;
-        height: 144px;
+        visibility: visible;
+        margin-top: 0;
+        width: 50%;
+        height: 50px;
         display: flex;
         flex-flow: column wrap;
         justify-content: center;
         align-content: center;
+        margin-top: auto;
+        margin-bottom: auto;
     }
 
-    .menuitem {
-        height: 100px;
-        width: 200px;
-        margin-top: 250px;
+    .dropdown {
+        visibility: hidden;
     }
 
-    .menuitem-1 a span {
-        height: 137px;
-        margin-top: 30px;
-    }
-
-    .menuitem-2 a span {
-        height: 137px;
-        margin-top: 30px;
+    .dropdownMenu {
+        transform: translateY(0);
     }
 
     .menuitem:hover {
         background: rgba(0, 0, 0, 0.2);
-        height: 100px;
+        height: 50px;
+    }
+
+    .menuitem {
+        width: 100px;
+        height: 50px;
+        text-align: center;
+        padding: 0;
+        border: 1px solid #9e95d8;
+    }
+
+    .menuitem a {
+        text-decoration: none;
+    }
+
+    .menuitem span {
+        display: block;
+        width: 100%;
+        padding-top: 5px;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 300;
+        letter-spacing: 1px;
+    }
+
+    .menuitem-1 a span {
+        width: 100%;
+        height: 137px;
+        color: #fafafa;
+        height: 70px;
+        margin-top: 12px;
+    }
+
+    .menuitem-2 a span {
+        width: 100%;
+        height: 137px;
+        color: #9e95d8;
+        height: 70px;
+        margin-top: 12px;
     }
 
     .boxlogo {
-        width: 100%;
+        width: 50%;
     }
 
     .about {
@@ -754,14 +865,14 @@ footer p {
         width: 100%;
         color: #fafafa;
         height: 100px;
-        margin-top: 30px;
+        margin-top: 12px;
     }
 
     .contact a span {
         width: 100%;
         color: #9e95d8;
         height: 100px;
-        margin-top: 30px;
+        margin-top: 12px;
     }
 
     /*----------------------------------------Desktop Main Section*/
@@ -769,9 +880,6 @@ footer p {
         height: 75vh;
     }
 
-    .opaque-overlay {
-        height: 75%;
-    }
 
     .welcome {
         font-size: 50px;
@@ -801,8 +909,11 @@ footer p {
     }
 
     .prices {
-        font-size: 25px;
-        margin-left: -15px
+        font-size: 24px;
+    }
+
+    .anti-prices {
+        font-size: 24px;
     }
 
     .wrinkle-areas {
@@ -826,6 +937,18 @@ footer p {
         margin-bottom: 30px;
     }
 
+    .area {
+        width: 33%;
+    }
+
+    .dermal-heading {
+        font-size: 30px;
+    }
+
+    .lips-img {
+        width: 70%;
+    }
+
     .button {
         font-size: 25px;
     }
@@ -835,12 +958,11 @@ footer p {
     }
 
     .list-treatment-description {
-        font-size: 25px;
-        margin-left: 160px;
+        font-size: 22px;
     }
 
     .treatment-description {
-        font-size: 25px;
+        font-size: 22px;
         text-align: center;
     }
 
