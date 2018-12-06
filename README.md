@@ -67,7 +67,7 @@ I have used cloud 9 to work on the coding of the website: https://ide.c9.io/sgri
 
 ## Credits
 
-### Meida
+### Media
 Photographs used throughout the project are taken from Adobe Stock and personal photographs taken by myself. 
 I have included Fontawesome for styling the social links.
     
