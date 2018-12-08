@@ -63,6 +63,7 @@ I validated my HTML and CSS code using https://validator.w3.org/ and correct err
 ## Deployment
 
 I have used cloud 9 to work on the coding of the website: https://ide.c9.io/sgriggs177/deep-in-aesthetics
+The website is deployed on GitHub at https://sarahg177.github.io/deep-inaethetics/
 
 
 ## Credits
