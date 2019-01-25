@@ -25,11 +25,11 @@ body {
 .index {
     height: 60vh;
 
-    background: url("../images/Tender_female_with_beautiful_evening_make-up_over_white.png") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    background: url("../images/Tender_female_with_beautiful_evening_make-up_over_white.png") no-repeat;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
 
     align-items: center;
 
